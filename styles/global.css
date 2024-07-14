@@ -32,3 +32,9 @@ a {
 img {
   width: 100%;
 }
+
+
+ul,
+li {
+  list-style-type: none;
+}

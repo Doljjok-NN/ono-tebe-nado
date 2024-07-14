@@ -1,1 +1,87 @@
-/* место для вашего кода */
+@font-face {
+    font-family: Raleway;
+    src:
+        url("/fonts/Raleway-Regular.woff") format("woff"),
+        url("/fonts/Raleway-Regular.woff2") format("woff2");
+}
+
+.header {
+    width: 1052px;
+
+    margin: 92px auto 96px;
+    display: flex;
+
+    border: 1px solid green;
+}
+
+.header-nav {
+    width: 65%;
+}
+
+
+
+.nav-item-box {
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nav-item {
+    display: flex;
+    padding-left: 26px;
+    color: rgb(0, 0, 0);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+
+
+}
+
+.nav-item li {
+    margin-right: 11px;
+}
+
+.nav-item li:last-child {
+    margin: 0;
+}
+
+.list-marker {}
+
+.nav-logo {
+    padding-top: 10px;
+    padding-left: 45px;
+}
+
+
+.header-kontact {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    align-items: center;
+
+
+
+}
+
+.kontact-list {
+    padding-right: 28px;
+    color: rgb(0, 0, 0);
+    font-family: Raleway,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    letter-spacing: 0%;
+}
+
+
+
+.title-section {
+    background-image: url("../images/lotus-flower.png");
+    height: 757px;
+    border: 2px solid teal;
+}
