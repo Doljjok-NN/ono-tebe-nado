@@ -3,85 +3,452 @@
     src:
         url("/fonts/Raleway-Regular.woff") format("woff"),
         url("/fonts/Raleway-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+
+
+}
+
+@font-face {
+    font-family: Raleway;
+    src:
+        url("/fonts/Raleway-Bold.woff") format("woff"),
+        url("/fonts/Raleway-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
 }
 
 .header {
+
+    margin: 92px auto;
     width: 1052px;
 
-    margin: 92px auto 96px;
+}
+
+.header__menu {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-    border: 1px solid green;
+    padding-right: 33px;
+    /* border: 1px solid red; */
 }
 
-.header-nav {
-    width: 65%;
-}
-
-
-
-.nav-item-box {
-    width: 100%;
-    border: 2px solid red;
+.flex-head {
+    width: 71%;
+    /* border: 1px solid green; */
+    gap: 45px;
     display: flex;
     align-items: center;
+
 }
 
 
 
-.nav-item {
+.link-list {
     display: flex;
-    padding-left: 26px;
+    gap: 30px;
+
+}
+
+.link-list-item {
+    
+    color: rgb(0, 0, 0);
+    font-family: Raleway, sans-serif;
+    font-size: 19px;
+    line-height: 21px;
+    letter-spacing: 0%;
+}
+
+.link-list-item:last-child {
+    margin-right: 0;
+}
+
+.list-style {
+    padding-left: 1px;
+    list-style: circle;
+    border-bottom: 1px solid black;
+}
+
+/* ---logo----------- */
+
+
+.header__logo {
+    width: 130px;
+}
+
+.header__logo-image {
+    width: 100%;
+}
+
+
+
+
+/*------------ adress--------------- */
+
+.header__adress-padding {
+    padding-right: 10px;
+}
+
+.adress-list {
     color: rgb(0, 0, 0);
     font-family: Raleway, sans-serif;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0%;
-
-
-}
-
-.nav-item li {
-    margin-right: 11px;
-}
-
-.nav-item li:last-child {
-    margin: 0;
-}
-
-.list-marker {}
-
-.nav-logo {
-    padding-top: 10px;
-    padding-left: 45px;
+    line-height: 22.4px;
+    letter-spacing: 1%;
 }
 
 
-.header-kontact {
+
+/* -----main------------ */
+
+
+
+.cover {
+    position: relative;
+    /* border: 1px solid hotpink; */
+    min-height: 757px;
+    background-image: url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 179px;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.6;
+
+}
+
+.cover__title {
+    padding-top: 165px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.title-style {
+    color: rgb(255, 255, 255);
+    font-family: Raleway, sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115%;
+    text-transform: uppercase;
+}
+
+.aligned-text {
+    letter-spacing: 25px;
+    padding-left: 50px;
+    display: block;
+}
+
+.letter-spas {
+    letter-spacing: 57px;
+}
+
+.aligned-text_center {
+    letter-spacing: 34px;
+    text-align: center;
+    padding-top: 14px;
+    display: block;
+}
+
+.letter-centr {
+    letter-spacing: 73px;
+}
+
+.aligned-text_right {
+    letter-spacing: 37px;
+    text-align: right;
+    display: block;
+}
+
+.letter-right {
+    letter-spacing: 60px;
+}
+
+/* ---------subtitle and button */
+
+.cover__description {
+    position: relative;
+    z-index: 1;
+    gap: 10px;
+    padding-top: 133px;
     display: flex;
-    width: 50%;
-    justify-content: end;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cover__description-text {
+    color: rgb(255, 255, 255);
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    word-spacing: 22px;
+
+    text-transform: uppercase;
+}
+
+
+
+.spacing-max {
+    word-spacing: 22px;
+}
+
+.bet-button {
+
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.button {
+    padding: 12px 31px;
+    color: rgb(255, 255, 255);
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* --------lots--------------------- */
+
+.lots {
+    width: 1052px;
+    margin: 0 auto;
+
+}
+
+.lots__heading {
+    padding-left: 40px;
+    padding-bottom: 27px;
+    color: rgb(0, 0, 0);
+    font-family: Raleway, sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.lots__card-list {
+    display: flex;
+    gap: 25px;
+    max-width: 1052px;
+    height: 564px;
+}
+
+.lots__card-list-item {
+    position: relative;
+    flex-basis: 334px;
+    height: 100%;
+    background-image: url("../images/card-lot-01.jpg");
+    background-repeat: no-repeat;
+    background-size: 563px;
+    background-position: center;
+}
+
+
+.kart-two {
+    background-image: url("../images/card-lot-02.jpg");
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-position: top;
+}
+
+.kart-trhee {
+    background-image: url("../images/card-lot-03.jpg");
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-position: bottom;
+}
+
+.kard-text {
+    position: relative;
+    padding-top: 51px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+    z-index: 1;
+    min-width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kard-text-title {
+    /* border: 1px solid rebeccapurple; */
+    color: rgb(255, 255, 255);
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.kard-text-promo {
+    color: rgb(255, 255, 255);
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.lots__footer-activ {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    padding-top: 30px;
+    margin-left: 40px;
+    color: rgb(0, 0, 0);
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+}
+
+/* -----about------------------ */
+
+
+.about {
+    margin-top: 148px;
+}
+
+.about__column {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 280px 315px;
+    /* border: 2px solid red; */
+}
+
+.about__logo {
+    padding-top: 35px;
+    padding-left: 10px;
+    /* border: 2px solid blueviolet; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.about__logo-image {
+    width: 140px;
+}
+
+.black {
+
+    width: 240px;
+    height: 240px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.about__title {
+    /* border: 2px solid turquoise; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
     align-items: center;
 
 
+}
+
+.title-stile {
+    padding-left: 13px;
+    padding-top: 33px;
+    color: rgb(0, 0, 0);
+    font-family: Raleway, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 15px;
+}
+
+.style {
+    color: rgb(0, 0, 0);
+    font-family: Raleway, sans-serif;
+    font-size: 21.5px;
+    font-weight: 400;
+    line-height: 24px;
 
 }
 
-.kontact-list {
-    padding-right: 28px;
+
+/* --------footer----------- */
+
+.footer {
+    /* border: 2px solid navy; */
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 180px;
+    padding-left:47px;
+    padding-right:46px;
+    padding-bottom: 80px;
+}
+
+.footer-padding {
+    padding-top: 8px;
+}
+
+.list-underline {
+    text-decoration: underline;
+}
+
+
+.footer__menu {
+    padding-left: 45px;
+}
+
+.footer__menu-list {
+    text-align: center;
     color: rgb(0, 0, 0);
     font-family: Raleway,sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 24.3px;
+    line-height: 21px;
     letter-spacing: 0%;
+    
 }
 
 
 
-.title-section {
-    background-image: url("../images/lotus-flower.png");
-    height: 757px;
-    border: 2px solid teal;
+.social-item {
+    display: flex;
+    gap: 48px;
+}
+
+.foter_img {
+    width: 48px;
 }
