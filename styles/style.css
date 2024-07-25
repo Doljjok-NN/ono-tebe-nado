@@ -9,14 +9,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     padding-right: 33px;
-    /* border: 1px solid red; */
+   
 }
 
 .flex-head {
     width: 71%;
-    /* border: 1px solid green; */
     gap: 45px;
     display: flex;
     align-items: center;
@@ -26,35 +24,36 @@
 
 
 .link-list {
+    padding-left: 5px;
+    padding-bottom: 5px;
     display: flex;
     gap: 30px;
 
 }
 
 .link-list-item {
-    
     color: rgb(0, 0, 0);
-    font-family: Raleway, sans-serif;
-    font-size: 19px;
-    line-height: 21px;
-    letter-spacing: 0%;
+    font-size: 18px;
+    line-height: 21.13px;
+    font-weight: 400;
 }
 
-.link-list-item:last-child {
-    margin-right: 0;
-}
+
 
 .list-style {
-    padding-left: 1px;
     list-style: circle;
     border-bottom: 1px solid black;
+}
+
+.letter_spac {
+    letter-spacing: 0.4px;
 }
 
 /* ---logo----------- */
 
 
 .header__logo {
-    width: 130px;
+    width: 133px;
 }
 
 .header__logo-image {
@@ -71,26 +70,26 @@
 }
 
 .adress-list {
+    padding-left: 6px;
+    padding-bottom: 5px;
     color: rgb(0, 0, 0);
-    font-family: Raleway, sans-serif;
     font-size: 18px;
-    line-height: 22.4px;
-    letter-spacing: 1%;
+    line-height: 24.3px;
+    
+    
 }
 
 
 
 /* -----main------------ */
 
-
-
 .cover {
     position: relative;
-    /* border: 1px solid hotpink; */
     min-height: 757px;
     background-image: url("../images/cover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin-bottom: 179px;
 }
 
@@ -112,7 +111,6 @@
 
 .title-style {
     color: rgb(255, 255, 255);
-    font-family: Raleway, sans-serif;
     font-size: 100px;
     font-weight: 700;
     line-height: 115%;
@@ -120,25 +118,30 @@
 }
 
 .aligned-text {
-    letter-spacing: 25px;
+    letter-spacing: 33px;
     padding-left: 50px;
     display: block;
 }
+
 
 .letter-spas {
     letter-spacing: 57px;
 }
 
+
 .aligned-text_center {
-    letter-spacing: 34px;
+    letter-spacing: 30px;
     text-align: center;
     padding-top: 14px;
     display: block;
 }
 
 .letter-centr {
-    letter-spacing: 73px;
+    letter-spacing: 60px;
+    padding-left: 30px;
 }
+
+
 
 .aligned-text_right {
     letter-spacing: 37px;
@@ -149,6 +152,8 @@
 .letter-right {
     letter-spacing: 60px;
 }
+
+
 
 /* ---------subtitle and button */
 
@@ -163,11 +168,11 @@
 }
 
 .cover__description-text {
+    padding-left: 23px;
     color: rgb(255, 255, 255);
-    font-family: Raleway, sans-serif;
     font-size: 22px;
     line-height: 28px;
-    word-spacing: 22px;
+    word-spacing: 20px;
 
     text-transform: uppercase;
 }
@@ -175,11 +180,11 @@
 
 
 .spacing-max {
-    word-spacing: 22px;
+    word-spacing: 17px;
 }
 
 .bet-button {
-
+    padding-left: 10px;
     background-color: transparent;
     box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);
@@ -188,11 +193,9 @@
 .button {
     padding: 12px 31px;
     color: rgb(255, 255, 255);
-    font-family: Raleway, sans-serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
 }
@@ -210,11 +213,9 @@
     padding-left: 40px;
     padding-bottom: 27px;
     color: rgb(0, 0, 0);
-    font-family: Raleway, sans-serif;
-    font-size: 38px;
+    font-size: 35px;
     font-weight: 700;
-    line-height: 45px;
-    letter-spacing: 0%;
+    line-height: 46.96px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -223,7 +224,8 @@
     display: flex;
     gap: 25px;
     max-width: 1052px;
-    height: 564px;
+    height: 100%;
+    /* height: 564px; */
 }
 
 .lots__card-list-item {
@@ -232,7 +234,7 @@
     height: 100%;
     background-image: url("../images/card-lot-01.jpg");
     background-repeat: no-repeat;
-    background-size: 563px;
+    background-size: cover;
     background-position: center;
 }
 
@@ -240,14 +242,14 @@
 .kart-two {
     background-image: url("../images/card-lot-02.jpg");
     background-repeat: no-repeat;
-    background-size: 550px;
+    background-size: cover;
     background-position: top;
 }
 
 .kart-trhee {
     background-image: url("../images/card-lot-03.jpg");
     background-repeat: no-repeat;
-    background-size: 550px;
+    background-size: cover;
     background-position: bottom;
 }
 
@@ -267,24 +269,27 @@
 }
 
 .kard-text-title {
-    /* border: 1px solid rebeccapurple; */
     color: rgb(255, 255, 255);
-    font-family: Raleway, sans-serif;
     font-size: 22px;
     font-weight: 700;
     line-height: 120%;
-    letter-spacing: 0%;
     text-decoration-line: underline;
     text-transform: uppercase;
 }
 
+.promo-padding {
+    padding-top: 242px;
+}
+
+.promo-padding-two {
+    padding-top: 95px;
+}
+
 .kard-text-promo {
     color: rgb(255, 255, 255);
-    font-family: Raleway, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 120%;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -294,11 +299,10 @@
     padding-top: 30px;
     margin-left: 40px;
     color: rgb(0, 0, 0);
-    font-family: Raleway, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
-    letter-spacing: 0%;
+    
 }
 
 /* -----about------------------ */
@@ -312,13 +316,12 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 280px 315px;
-    /* border: 2px solid red; */
+    
 }
 
 .about__logo {
     padding-top: 35px;
     padding-left: 10px;
-    /* border: 2px solid blueviolet; */
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -347,8 +350,7 @@
 
 
 .about__title {
-    /* border: 2px solid turquoise; */
-    grid-column-start: 2;
+   grid-column-start: 2;
     grid-column-end: 3;
     display: flex;
     align-items: center;
@@ -360,11 +362,9 @@
     padding-left: 13px;
     padding-top: 33px;
     color: rgb(0, 0, 0);
-    font-family: Raleway, sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 47px;
-    letter-spacing: 0%;
     text-transform: uppercase;
 }
 
@@ -375,10 +375,11 @@
     padding-left: 15px;
 }
 
+
+
 .style {
     color: rgb(0, 0, 0);
-    font-family: Raleway, sans-serif;
-    font-size: 21.5px;
+    font-size: 20.7px;
     font-weight: 400;
     line-height: 24px;
 
@@ -388,7 +389,6 @@
 /* --------footer----------- */
 
 .footer {
-    /* border: 2px solid navy; */
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -399,27 +399,26 @@
 }
 
 .footer-padding {
-    padding-top: 8px;
+    
 }
 
 .list-underline {
-    text-decoration: underline;
+    
 }
 
 
 .footer__menu {
-    padding-left: 45px;
+    padding-left: 35px;
+    padding-bottom: 40px;
 }
 
 .footer__menu-list {
+    
     text-align: center;
     color: rgb(0, 0, 0);
-    font-family: Raleway,sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0%;
-    
+    line-height: 21.13px;
 }
 
 
