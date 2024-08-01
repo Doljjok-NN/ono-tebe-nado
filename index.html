@@ -19,28 +19,29 @@
 
       <div class="flex-head">
 
-        <div class="header__links-list">
+        <nav class="header__links-list">
           <ul class="link-list">
-            <li class="link-list-item letter_spac"><a href="#">главная</a></li>
-            <li class="list-style link-list-item letter_spac"><a href="#">посмотреть лоты</a></li>
-            <li class="list-style link-list-item"><a href="#">об аукционе</a></li>
+            <li class="link-list-item no-border-bottom"><a href="#">главная</a></li>
+            <li class="link-list-item"><a href="#">посмотреть лоты</a></li>
+            <li class="link-list-item"><a href="#">об аукционе</a></li>
           </ul>
-        </div>
+        </nav>
 
         <div class="header__logo">
-          <a href="#"><img class="header__logo-image" src="images/logo-black.svg" alt="Лого сайта, надпись: ОНО ТЕБЕ НАДО"></a>
+          <a href="#"><img class="header__logo-image" src="images/logo-black.svg"
+              alt="Лого сайта, надпись: ОНО ТЕБЕ НАДО"></a>
         </div>
 
       </div>
 
 
-      <div class="address header__adress-padding">
-        <ul class="adress-list">
-          <li class="list-underline"><a href="#">+9 999 555 5555</a></li>
-          <li class="list-underline"><a href="#">info@sobaka.ge</a></li>
-          <li><a href="#">наб. Принсенграхт 263-<br> 265, Амстердам</a></li>
-        </ul>
-      </div>
+      <address class="address header__adress-padding">
+        <div class="adress-list">
+          <a class="adress-list-item" href="tel:+9 999 555 5555">+9 999 555 5555</a><br>
+          <a class="adress-list-item" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+          <p>наб. Принсенграхт 263-<br> 265, Амстердам</p>
+        </div>
+      </address>
 
     </div>
 
@@ -55,15 +56,15 @@
 
       <div class="cover__title">
         <h1 class="title-style">
-          <span class="aligned-text">о<span class="letter-spas">н</span>о</span>
-          <span class="aligned-text_center">теб<span class="letter-centr">e</span></span>
+          <span class="aligned-text">о<span class="letter-start">н</span>о</span>
+          <span class="aligned-text_center">теб<span class="letter-center">e</span></span>
           <span class="aligned-text_right"><span class="letter-right">н</span>адо</span>
         </h1>
       </div>
 
       <div class="cover__description">
         <div class="cover__description-text">
-          <p>Аукцион вещей, в которые <span class="spacing-max">никто не верил</span></p>
+          <p>Аукцион вещей, в которые никто не верил</p>
         </div>
         <div class="bet-button">
           <button class="button">Сделать ставку</button>
@@ -75,35 +76,38 @@
     <section class="lots">
 
       <div class="lots__heading">
-        <h3>Лоты</h3>
+        <h4>Лоты</h4>
       </div>
 
       <div class="lots__card-list">
 
         <div class="lots__card-list-item">
           <div class="overlay"></div>
-          <div class="kard-text">
-            <div class="kard-text-title">
-              <p>Фильм режиссёра, который бросил киношколу</p>
-            </div>
-            <div class="kard-text-promo promo-padding">
-              <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр
-                — Пол Томас Андерсон?
-              </p>
-            </div>
-          </div>
+          <a href="#">
+            <div class="card-text">
+              <div class="card-text-title">
+                <p>Фильм режиссёра, который бросил киношколу</p>
+              </div>
+              <div class="card-text-promo promo-padding">
+                <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что
+                  режиссёр
+                  — Пол Томас Андерсон?
+                </p>
+              </div>
+          </a>
         </div>
+      </div>
 
-        <div class="lots__card-list-item kart-two">
-          <div class="overlay"></div>
+      <div class="lots__card-list-item kart-two">
+        <div class="overlay"></div>
+        <a href="#">
+          <div class="card-text">
 
-          <div class="kard-text">
-
-            <div class="kard-text-title">
+            <div class="card-text-title">
               <p>Книга, где описан один скучный день из жизни рекламного агента</p>
             </div>
 
-            <div class="kard-text-promo">
+            <div class="card-text-promo">
               <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней
                 одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И
                 это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
@@ -111,17 +115,17 @@
             </div>
 
           </div>
+        </a>
+      </div>
 
-        </div>
-
-        <div class="lots__card-list-item kart-trhee">
-          <div class="overlay"></div>
-
-          <div class="kard-text">
-            <div class="kard-text-title">
+      <div class="lots__card-list-item kart-trhee">
+        <div class="overlay"></div>
+        <a href="#">
+          <div class="card-text">
+            <div class="card-text-title">
               <p>Картина, которую повторит даже 5-летний сын маминой подруги</p>
             </div>
-            <div class="kard-text-promo promo-padding-two">
+            <div class="card-text-promo promo-padding-two">
               <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку.
                 Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна
                 из<br>
@@ -129,8 +133,8 @@
               </p>
             </div>
           </div>
-
-        </div>
+        </a>
+      </div>
 
       </div>
 
@@ -163,7 +167,8 @@
           <p class="text-glav style">
             Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата.
             Наши лоты вообще не
-            должны были попасть<br> ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую
+            должны были попасть<br> ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина,
+            которую
             может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
           </p>
 
@@ -178,7 +183,7 @@
         </div>
 
       </div>
-      
+
     </section>
 
   </main>
