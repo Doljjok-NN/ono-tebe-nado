@@ -25,7 +25,6 @@
 
 .link-list {
     padding-left: 5px;
-    padding-bottom: 5px;
     display: flex;
     gap: 34px;
 
@@ -353,7 +352,7 @@
 
 }
 
-.title-stile {
+.about__title-style {
     padding-left: 17px;
     padding-top: 38px;
     color: rgb(0, 0, 0);
@@ -368,13 +367,22 @@
     flex-direction: column;
     gap: 24px;
     padding-left: 15px;
+    padding-top: 3px;
 }
 
+.about__text__antiques {
+    max-width: 688px;
+}
+
+
+.about__text__lots {
+    max-width: 688px;
+}
 
 
 .style {
     color: rgb(0, 0, 0);
-    font-size: 20.7px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 24px;
 
@@ -393,14 +401,6 @@
     padding-bottom: 80px;
 }
 
-.footer-padding {
-    
-}
-
-.list-underline {
-    
-}
-
 
 .footer__menu {
     padding-left: 35px;
@@ -408,7 +408,6 @@
 }
 
 .footer__menu-list {
-    
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 18px;
@@ -416,6 +415,9 @@
     line-height: 21.13px;
 }
 
+.menu-list-item {
+    border-bottom: 1px solid black;
+}
 
 
 .social-item {
@@ -423,6 +425,6 @@
     gap: 48px;
 }
 
-.foter_img {
+.foter__img {
     width: 48px;
 }
