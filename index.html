@@ -16,18 +16,22 @@
   <header class="header">
     <nav class="header__links-list">
       <ul class="link-list">
-        <li class="header__link header__link_active">
-          <a href="#">главная</a>
+        <li class="link-list-item-style cancel-style-for-link-list-item">
+          <a class="unique-link unique-link-active" href="#">главная</a>
         </li>
-        <li class="header__link"><a href="#">посмотреть лоты</a></li>
-        <li class="header__link"><a href="#">об аукционе</a></li>
+        <li class="link-list-item-style">
+          <a class="unique-link" href="#">посмотреть лоты</a>
+        </li>
+        <li class="link-list-item-style">
+          <a class="unique-link" href="#">об аукционе</a>
+        </li>
       </ul>
     </nav>
 
     <a href="#"><img class="header__logo-image" src="images/logo-black.svg" alt="Лого сайта, надпись: ОНО ТЕБЕ НАДО" />
     </a>
 
-    <address class="address header__adress">
+    <address class="unique__address header__adress__style">
       <a class="adress-list-item" href="tel:+9999555z5555">+9 999 555 5555</a><br />
       <a class="adress-list-item" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
       <p>
@@ -55,16 +59,16 @@
     </section>
 
     <section class="lots">
-      <h5 class="lots__heading">Лоты</h5>
+      <h2 class="lots__heading">Лоты</h2>
 
       <div class="lots__card-list">
-        <div class="lots__card-list-item background-settings">
+        <div class="lots__card-list-item image-children-in-nature background-settings">
           <a href="#">
-            <div class="overlay"></div>
             <article class="card-text">
-              <h6 class="card-text-title">
+              <div class="overlay"></div>
+              <h3 class="card-text-title">
                 Фильм режиссёра, который бросил киношколу
-              </h6>
+              </h3>
 
               <p class="card-text-promo">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
@@ -77,11 +81,11 @@
 
         <div class="lots__card-list-item image-lion background-settings">
           <a href="#">
-            <div class="overlay"></div>
             <article class="card-text">
-              <h6 class="card-text-title">
+              <div class="overlay"></div>
+              <h3 class="card-text-title">
                 Книга, где описан один скучный день из жизни рекламного агента
-              </h6>
+              </h3>
 
               <p class="card-text-promo">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и
@@ -97,11 +101,11 @@
 
         <div class="lots__card-list-item image-abstraction background-settings">
           <a href="#">
-            <div class="overlay"></div>
             <article class="card-text">
-              <h6 class="card-text-title">
+              <div class="overlay"></div>
+              <h3 class="card-text-title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
-              </h6>
+              </h3>
 
               <p class="card-text-promo">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе
@@ -127,7 +131,7 @@
           </div>
         </div>
 
-        <h6 class="about__title-style">Об аукционе</h6>
+        <h2 class="about__title-style">Об аукционе</h2>
 
         <div class="about__text">
           <p class="about__text__style">
@@ -153,7 +157,7 @@
   </main>
 
   <footer class="footer">
-    <address class="address footer__adress">
+    <address class="unique__address footer__adress__style">
       <a class="adress-list-item" href="tel:+99995555555">+9 999 555 5555</a><br />
       <a class="adress-list-item" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
       <p>
@@ -165,10 +169,14 @@
     <nav class="footer__menu">
       <ul class="footer__menu-list">
         <li>
-          <a class="footer__link footer__link_active" href="#">главная</a>
+          <a class="unique-link unique-link-active" href="#">главная</a>
         </li>
-        <li><a class="footer__link" href="#">посмотреть лоты</a></li>
-        <li><a class="footer__link" href="#">об аукционе</a></li>
+        <li>
+          <a class="unique-link" href="#">посмотреть лоты</a>
+        </li>
+        <li>
+          <a class="unique-link" href="#">об аукционе</a>
+        </li>
       </ul>
     </nav>
 
