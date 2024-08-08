@@ -6,7 +6,7 @@
   gap: 45px;
 }
 
-.header__links-list {
+.header__nav {
   padding-left: 28px;
 }
 
@@ -15,11 +15,11 @@
   gap: 32px;
 }
 
-.link-list-item-style {
+.link-item-style {
   list-style: circle;
 }
 
-.cancel-style-for-link-list-item {
+.cancel-style-link-item {
   list-style: none;
 }
 
@@ -50,7 +50,8 @@
 
 .header__adress__style {
   align-self: flex-end;
-  padding-left: 149px;
+  padding-left: 150px;
+  padding-bottom: 5px;
 }
 
 /*------------- СТИЛИ ДЛЯ АДРЕССА В HEADER И FOOTER!----------------- */
@@ -59,11 +60,17 @@
   color: rgb(0, 0, 0);
   font-size: 18px;
   line-height: 24.3px;
-  padding-bottom: 5px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .adress-list-item {
   border-bottom: 1px solid black;
+  
+}
+
+.adress-info {
+  max-width: 236px;
 }
 
 /* ---------MAIN------------ */
@@ -207,7 +214,7 @@
   background-position: center;
 }
 
-.image-children-in-nature {
+.image-children {
   background-image: url("../images/card-lot-01.jpg");
 }
 
@@ -349,7 +356,6 @@
 }
 
 .footer__menu {
-  padding-left: 35px;
   padding-bottom: 40px;
 }
 
